@@ -1,10 +1,11 @@
 import express, { Request, Response } from "express";
-const { booleanTypes, numberTypes } = require("./exersices");
+const { booleanTypes, numberTypes, stringTypes } = require("./exersices");
 const app = express();
 
 app.get("/", (req: Request, res: Response) => {
   booleanTypes();
   numberTypes();
+  stringTypes();
   res.status(200).json("Init TypeScript Project!");
 });
 
