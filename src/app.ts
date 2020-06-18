@@ -1,9 +1,11 @@
 import express, { Request, Response } from "express";
-
+const { booleanTypes, numberTypes } = require("./exersices");
 const app = express();
 
 app.get("/", (req: Request, res: Response) => {
-  res.json("Hola mundo");
+  booleanTypes();
+  numberTypes();
+  res.status(200).json("Init TypeScript Project!");
 });
 
 app.listen(3000, () => {
