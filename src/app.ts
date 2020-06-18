@@ -6,7 +6,7 @@ const {
   anyTypes,
   arrayTypes,
   objectTypes,
-} = require("./exersices");
+} = require("./types");
 const app = express();
 
 app.get("/", (req: Request, res: Response) => {
