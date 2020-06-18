@@ -6,6 +6,8 @@ const {
   anyTypes,
   arrayTypes,
   objectTypes,
+  customTypes,
+  interfaceTypes,
 } = require("./types");
 const app = express();
 
@@ -16,6 +18,9 @@ app.get("/", (req: Request, res: Response) => {
   anyTypes();
   arrayTypes();
   objectTypes();
+  customTypes();
+  interfaceTypes();
+
   res.status(200).json("Init TypeScript Project!");
 });
 
